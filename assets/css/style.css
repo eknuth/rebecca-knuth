@@ -1,0 +1,77 @@
+body {
+	color: #222;
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+a:link, a:visited {
+	color: #E8D069;
+}
+
+img {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+p {
+	font-size: 16px;
+}
+
+dt, strong {
+	font-size: 18px;
+}
+
+dd, li {
+	font-size: 16px;
+}
+
+
+.navbar .brand {
+	padding-left: 15px;
+}
+.sidebar-nav {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+	.sidebar-nav .nav-header:first-child {
+		margin-top: 5px;
+	}
+	.sidebar-nav .nav-header {
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1;
+		color: inherit;
+		text-rendering: optimizelegibility;
+	}
+	.nav-list > li > a {
+		padding: 1px 15px;
+	}
+	.sidebar-nav a:link, .sidebar-nav a:visited {
+		color: white;
+	}
+	.sidebar-nav .nav-header a:link, .sidebar-nav .nav-header a:visited {
+		color: #E8D069;
+	}
+.main {
+	border-radius: 10px;
+}
+	.main h2, h3 {
+		line-height: 1;
+		margin-top: -5px;
+		font-family: 'Cabin',Verdana,sans-serif;
+
+	}
+
+.books > .row-fluid {
+	margin: 20px 0px;
+}
+
+.image .attrib, .image .attrib a {
+	text-align: right;
+	font-size: 12px;
+	line-height: 1;
+}
