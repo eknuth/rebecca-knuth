@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ "/assets/css/bootstrap.min.css" | prepend: site.baseurl | prepend: site.url}}" rel="stylesheet">
+    <link href="{{ "/assets/css/bootstrap-responsive.css" | prepend: site.baseurl | prepend: site.url}}" rel="stylesheet">
 
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="{{ "/assets/css/style.css" | prepend: site.baseurl | prepend: site.url}}" rel="stylesheet">
 
     <style type="text/css">
       body {
@@ -28,7 +28,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="{{ "/assets/ico/favicon.ico" | prepend: site.baseurl | prepend: site.url}}">
 
   </head>
 
@@ -42,19 +42,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a> -->
-          <a class="brand" href="/">Dr. Rebecca Knuth</a>
+          <a class="brand" href="{{ "/" | prepend: site.baseurl | prepend: site.url}}">Dr. Rebecca Knuth</a>
           <div>
             <ul class="nav">
               <li {% if page.url == '/' %}class="active"{% endif %}>
-                <a href="/">Home</a></li>
+                <a href="{{ "/" | prepend: site.baseurl | prepend: site.url}}">Home</a></li>
               <li {% if page.url == '/writing/' %}class="active"{% endif %}>
-                <a href="/writing">Writing</a></li>
+                <a href="{{ "/writing" | prepend: site.baseurl | prepend: site.url}}">Writing</a></li>
               <li {% if page.url == '/popularizing_nonfiction/' %}class="active"{% endif %}>
-                <a href="/popularizing_nonfiction">Popularizing Nonfiction</a></li>
+                <a href="{{ "/popularizing_nonfiction" | prepend: site.baseurl | prepend: site.url}}">Popularizing Nonfiction</a></li>
               <li {% if page.url == '/biography.html' %}class="active"{% endif %}>
-                <a href="/biography.html">Biography</a></li>
+                <a href="{{ "/biography.html" | prepend: site.baseurl | prepend: site.url}}">Biography</a></li>
               <li {% if page.url == '/contact.html' %}class="active"{% endif %}>
-                <a href="/contact.html">Contact</a></li>
+                <a href="{{ "/contact.html" | prepend: site.baseurl | prepend: site.url}}">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -66,16 +66,16 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header"><a href="/writing">Writing</a></li>
-              <li><a href="/writing/in_progress.html">In Progress</a></li>
-              <li><a href="/publications.html">Books</a></li>
-              <li class="nav-header"><a href="/popularizing_nonfiction/">Popularizing Nonfiction</a></li>
-              <li><a href="/guiding">Guiding Course</a></li>
-              <li><a href="/speaking">Cruise Ship Lectures</a></li>
-              <li class="nav-header"><a href="/biography.html">Biography</a></li>
-              <li><a href="/experience.html#education">Academic Background</a></li>
-              <li><a href="/experience.html#awards">Awards & Honors</a></li>
-              <li class="nav-header"><a href="/contact.html">Contact</a></li>
+              <li class="nav-header"><a href="{{ "/writing">Writing</a></li>
+              <li><a href="{{ "/writing/in_progress.html" | prepend: site.baseurl | prepend: site.url}}">In Progress</a></li>
+              <li><a href="{{ "/publications.html" | prepend: site.baseurl | prepend: site.url}}">Books</a></li>
+              <li class="nav-header"><a href="{{ "/popularizing_nonfiction/" | prepend: site.baseurl | prepend: site.url}}">Popularizing Nonfiction</a></li>
+              <li><a href="{{ "/guiding" | prepend: site.baseurl | prepend: site.url}}">Guiding Course</a></li>
+              <li><a href="{{ "/speaking | prepend: site.baseurl | prepend: site.url}}">Cruise Ship Lectures</a></li>
+              <li class="nav-header"><a href="{{ "/biography.html" | prepend: site.baseurl | prepend: site.url}}">Biography</a></li>
+              <li><a href="{{ "/experience.html#education" | prepend: site.baseurl | prepend: site.url}}">Academic Background</a></li>
+              <li><a href="{{ "/experience.html#awards" | prepend: site.baseurl | prepend: site.url}}">Awards & Honors</a></li>
+              <li class="nav-header"><a href="{{ "/contact.html" | prepend: site.baseurl | prepend: site.url}}">Contact</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -90,7 +90,7 @@
       <hr>
       <footer>
         <p>&copy; 2015 Rebecca Knuth, All Rights Reserved</p>
-        <p><a href="/attributions.html">Attribution</a></p>
+        <p><a href="{{ "/attributions.html" | prepend: site.baseurl | prepend: site.url}}">Attribution</a></p>
       </footer>
 
     </div><!--/.fluid-container-->
